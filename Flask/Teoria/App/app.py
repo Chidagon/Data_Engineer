@@ -36,3 +36,5 @@ def user(name: str):
 def user1(name):
     return "<h1>Bye, {}!</h1>".format(name)
 >>>>>>> upstream/main
+if __name__ == "__main__":
+    app.run(debug=True)
