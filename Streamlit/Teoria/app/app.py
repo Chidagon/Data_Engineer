@@ -4,7 +4,7 @@ st.title('Hello World. This is a Title')
 
 # Al ejecutar este código no tendremos que "logear" en Streamlit (solo nuestro correo)
 
-# En la terminal copiamos y pegamos el comando que nos indica algo similar a ""streamlit run c:/Users....""
+# En la terminal copiamos y pegamos el comando que nos indica algo similar a ""streamlit run c:/Users..""
 
 # Se abrirá el navegador en la ruta "http://localhost:8501/"
 
