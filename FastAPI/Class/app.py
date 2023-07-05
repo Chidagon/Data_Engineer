@@ -10,17 +10,35 @@ app = FastAPI()
 model = IrisModel()
 
 # 3. Exponer la funcionalidad de predicción, realizar una predicción a partir de los datos JSON pasados
+<<<<<<< HEAD
 #    y devolver la especie de flor predicha con la confianza
+=======
+#    y devolver la especie de flor predicha con la 
+
+@app.get("/")
+def home():
+    return {
+        "message": "Welcome to the Iris Prediction App!"
+    }
+>>>>>>> upstream/main
 
 @app.post('/predict')
 def predict_species(iris: IrisSpecies):
     data = iris.dict()
+<<<<<<< HEAD
     prediction, probability = model.predict_species(
         data['sepal.length'], data['sepal.width'], data['petal.length'], data['petal.width']
     )
     return {
         'prediction': prediction,
         'probability': probability
+=======
+    prediction, prediction_proba = model.predict_species(data['sepal_length'], data['sepal_width'], data['petal_length'], data['petal_width'])
+    return {
+        'prediction': prediction,
+        'probability': prediction_proba        
+
+>>>>>>> upstream/main
     }
 
 # 4. Ejecutar la API con uvicorn
