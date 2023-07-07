@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 "sepal.length","sepal.width","petal.length","petal.width","variety"
+=======
+"sepal_length","sepal_width","petal_length","petal_width","variety"
+>>>>>>> upstream/main
 =======
 "sepal_length","sepal_width","petal_length","petal_width","variety"
 >>>>>>> upstream/main
